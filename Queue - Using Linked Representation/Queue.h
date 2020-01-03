@@ -35,7 +35,7 @@ bool Queue::isEmpty()
         return false;
 }
 
-void Queue::enqueue(int num)                 // Inserting Into Queue
+void Queue::enqueue(int num)                 // Inserting Into Queue 
 {
     Node *temp = new Node();                 // Node Created in Heap and manipulating it.
 
