@@ -65,9 +65,10 @@ int Queue::dequeue()                       // Retrieving Element in FIFO Manner
         cout<<"Queue Is Empty, cannot apply Dequeue\n";
     else
     {
-        Node *deleter = frnt;
+        Node *t = frnt;
         x = frnt->data;
         frnt = frnt->next;
+        free(t);
     }
     return x;
 }
